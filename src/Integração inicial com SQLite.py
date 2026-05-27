@@ -1,23 +1,46 @@
 import tkinter as tk
 from tkinter import messagebox
+import sqlite3
+
+# BANCO DE DADOS
+
+conn = sqlite3.connect("estoque.db")
+
+cursor = conn.cursor()
+
+cursor.execute("""
+CREATE TABLE IF NOT EXISTS produtos (
+
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+
+    nome TEXT,
+
+    categoria TEXT
+)
+""")
+
+conn.commit()
 
 # FUNÇÃO
 
 def cadastrar_produto():
 
     nome = entry_nome.get()
+
     categoria = entry_categoria.get()
 
     if nome == "" or categoria == "":
+
         messagebox.showerror(
             "Erro",
             "Preencha todos os campos"
         )
 
     else:
+
         messagebox.showinfo(
             "Sucesso",
-            "Produto cadastrado com sucesso"
+            "Produto cadastrado"
         )
 
 # JANELA
