@@ -1,14 +1,18 @@
 # Sistema de Gestão de Estoque
 
-Projeto desenvolvido em Python para a disciplina de Análise e Desenvolvimento de Sistemas (ADS).
+Sistema desktop desenvolvido em Python com interface gráfica, voltado para o controle de estoque de produtos, permitindo cadastro, movimentação e geração de relatórios.
+Projeto acadêmico desenvolvido para a disciplina de Análise e Desenvolvimento de Sistemas (ADS).
 
 ## Tecnologias Utilizadas
 
 - Python
 - Tkinter
 - SQLite
-- Pandas
 
+# Objetivo
+
+O sistema tem como objetivo facilitar o gerenciamento de estoque, permitindo o controle eficiente de entrada e saída de produtos, além de fornecer informações úteis para tomada de decisão.
+Sistemas desse tipo são fundamentais para organizar mercadorias e automatizar processos dentro de empresas.
 
 # Funcionalidades
 
@@ -43,13 +47,6 @@ O sistema mostra alertas automáticos quando:
 - A quantidade do produto é menor que 5
 
 
-## Relatórios Gerenciais
-
-O sistema gera:
-- Histórico de movimentações
-- Relatórios utilizando Pandas
-
-
 # Banco de Dados
 
 O sistema utiliza SQLite para armazenar:
@@ -62,13 +59,15 @@ O sistema utiliza SQLite para armazenar:
 A interface gráfica foi desenvolvida com Tkinter.
 
 
-# Como Executar
+#Como Executar o Projeto
+# Clone o repositório
+git clone https://github.com/pedrohenrmt/MVE-Gestao-de-Estoque
 
-## Instalar Pandas
+- Acesse a pasta do projeto
+cd MVE-Gestao-de-Estoque/src
 
-```bash
-pip install pandas
-```
+- Execute o sistema
+python main.py
 
 
 # Estrutura do Projeto
